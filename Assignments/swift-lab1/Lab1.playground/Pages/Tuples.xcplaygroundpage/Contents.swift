@@ -58,6 +58,17 @@ let yCoord = coordinate.y
 // Write your answers here:
 
 import Foundation // you need Foundation imported for the sqrt() function
+let startCoord: (x:Float, y:Float) = (5.1, 8.3)
+let endCoord: (x:Float, y:Float) = (375.0, 667.0)
+let distance = sqrt((endCoord.x - startCoord.x)*(endCoord.x - startCoord.x) + (endCoord.y - startCoord.y)*(endCoord.y - startCoord.y))
+print(distance)
+
+var usd: (type: String, value: Double) = ("USD", 1.00)
+var cad: (type: String, value: Double) = ("CAD", usd.value * 1.29)
+var aud: (type: String, value: Double) = ("AUD", usd.value * 1.36)
+var message: String = "\(usd.value) \(usd.type) is equal to \(cad.value) \(cad.type) and \(aud.value) \(aud.type)"
+print(message)
+
 
 
 

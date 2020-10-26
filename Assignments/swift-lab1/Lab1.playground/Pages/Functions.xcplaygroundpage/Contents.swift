@@ -90,9 +90,18 @@ resize2(fromWidth: 20, fromHeight: 30, toWidth: 100, toHeight: 400)
 
  */
 // Write your challenge code here:
-
-
-
+func calcArea(height: Int, width: Int) -> Int {
+    return height * width
+}
+calcArea(height: 90, width: 30)
+func calcPerimeter(height:Int, width: Int) -> Int {
+    return 2*height + 2*width
+}
+calcPerimeter(height: 90, width: 30)
+func weirdPerimeter(side1: Int, side2: Int, side3: Int, side4: Int) -> Int {
+    return side1 + side2 + side3 + side4
+}
+weirdPerimeter(side1: 90, side2: 30, side3: 44, side4: 32)
 
 
 
